@@ -1,1 +1,1 @@
-ls -t --format=comma
+ls -tmp

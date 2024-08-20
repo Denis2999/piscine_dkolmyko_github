@@ -1,5 +1,1 @@
-echo "*.pdf"
-echo "*.ps"
-echo "*.midi"
-echo "some_picture.jpg"
-echo "trash_ignore.txt"
+cat ../../.gitignore
