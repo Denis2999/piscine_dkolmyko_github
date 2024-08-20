@@ -4,10 +4,8 @@ This repository contains all my code files from the 42 School Piscine. Each proj
 
 ## Projects
 
-- **Libft**
-- **ft_printf**
-- **Get_Next_Line**
-- **Fillit**
+- **shell_00**
+- **shell_01**
 - And more as I progress through the Piscine...
 
 ## Setup & Usage
