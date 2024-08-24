@@ -6,9 +6,11 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 10:16:11 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/08/22 17:22:42 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/08/24 10:00:26 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_print_numbers(int n)
 {

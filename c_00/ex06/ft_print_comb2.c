@@ -6,11 +6,13 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 16:48:46 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/08/23 10:09:23 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/08/24 10:22:25 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_print_comb2_output(char counter_a, char counter_b)
+#include <unistd.h>
+
+void	ft_print_comb2_output(int counter_a, int counter_b)
 {
 	char	buffer[5];
 
@@ -28,17 +30,17 @@ void	ft_print_comb2_output(char counter_a, char counter_b)
 
 void	ft_print_comb2(void)
 {
-	char	counter_a;
-	char	counter_b;
+	int	counter_a;
+	int	counter_b;
 
-	counter_a = '0';
-	counter_b = '0';
+	counter_b = 0;
+	counter_a = 0;
 	while (counter_a <= 99)
 	{
 		counter_b = counter_a + 1;
 		while (counter_b <= 99)
 		{
-			ft_print_comb2_output(counter_a, counter_a);
+			ft_print_comb2_output(counter_a, counter_b);
 			counter_b++;
 		}
 		counter_a++;
