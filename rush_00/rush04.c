@@ -27,7 +27,7 @@ void rush(int x, int y)
 
 			size_x++;
 		}
-		write(1, "\n", x);
+		write(1, "\n", 1);
 		size_y++;
 	}
 }
