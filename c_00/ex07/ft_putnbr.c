@@ -6,23 +6,47 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/23 10:10:19 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/08/24 10:34:24 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/08/25 11:59:31 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putnbr(int nb)
+void	ft_itoa(int nb, char buffer[], int *index)
 {
-	char buffer[16];
-	int len;
-
-	len = snprintf(buffer, sizeof(buffer), "%d", nb);
-	write(1, buffer, len);
+	if (nb == 0)
+	{
+		buffer[(*index)++] = '0';
+	}
+	else
+	{
+		while (nb > 0)
+		{
+			buffer[(*index)++] = nb % 10 + '0';
+			nb /= 10;
+		}
+	}
 }
-int main(void)
-{
-	ft_putnbr(42);
 
-	return 0;
+void	ft_putnbr(int nb)
+{
+	char	buffer[10];
+	int		index;
+
+	index = 0;
+	if (nb == -2147483648)
+	{
+		write(1, "-2147483648", 11);
+		return ;
+	}
+	if (nb < 0)
+	{
+		write(1, "-", 1);
+		nb = -nb;
+	}
+	ft_itoa(nb, buffer, &index);
+	while (index > 0)
+	{
+		write(1, &buffer[--index], 1);
+	}
 }
