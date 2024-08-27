@@ -6,14 +6,15 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 09:39:43 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/08/26 13:39:47 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/08/27 09:44:25 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-	int swap = *b;
-	*b = *a;
+	int	swap;
 
+	swap = *b;
+	*b = *a;
 	*a = swap;
 }
