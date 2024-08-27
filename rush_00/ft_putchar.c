@@ -1,17 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mkurowsk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/24 18:57:39 by mkurowsk          #+#    #+#             */
+/*   Updated: 2024/08/24 19:25:14 by mkurowsk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include <unistd.h>
 
-void ft_putchar(char a, char c, char b, int size_x, int x)
+void	ft_putchar(char c)
 {
-	if (size_x == 1)
-	{
-		write(1, &a, 1);
-	}
-	else if (size_x == x)
-	{
-		write(1, &c, 1);
-	}
-	else
-	{
-		write(1, &b, 1);
-	}
+	write(1, &c, 1);
 }
