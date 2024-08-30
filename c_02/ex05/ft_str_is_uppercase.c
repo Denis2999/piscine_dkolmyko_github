@@ -6,9 +6,11 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 10:36:13 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/08/29 12:39:22 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/08/30 10:20:30 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// #include <stdio.h>
 
 int	ft_str_is_uppercase(char *str)
 {
@@ -17,7 +19,7 @@ int	ft_str_is_uppercase(char *str)
 	counter = 0;
 	while (str[counter] != '\0')
 	{
-		if ('A' > str[counter] && str[counter] > 'Z')
+		if ('A' > str[counter] || str[counter] > 'Z')
 		{
 			return (0);
 		}
@@ -25,3 +27,10 @@ int	ft_str_is_uppercase(char *str)
 	}
 	return (1);
 }
+
+// int main(void)
+// {
+// 	char src[20] = "ASD";
+
+// 	printf("%d\n", ft_str_is_uppercase(src));
+// }

@@ -6,9 +6,11 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 10:36:13 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/08/29 10:43:36 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/08/30 10:57:54 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// #include <stdio.h>
 
 int	ft_str_is_printable(char *str)
 {
@@ -25,3 +27,10 @@ int	ft_str_is_printable(char *str)
 	}
 	return (1);
 }
+
+// int main(void)
+// {
+// 	char src[20] = "ASD";
+
+// 	printf("%d\n", ft_str_is_printable(src));
+// }
