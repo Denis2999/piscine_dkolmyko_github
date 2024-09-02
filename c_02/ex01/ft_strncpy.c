@@ -6,7 +6,7 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 10:36:13 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/08/30 10:09:41 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/09/02 09:16:11 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	len;
+	unsigned int	len;
 
 	len = 0;
 	while (len < n && src[len] != '\0')

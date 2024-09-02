@@ -6,7 +6,7 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 10:36:13 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/08/30 10:57:54 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/09/02 09:15:36 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_str_is_printable(char *str)
 	counter = 0;
 	while (str[counter] != '\0')
 	{
-		if (str[counter] < '!' || str[counter] > '~')
+		if (str[counter] < ' ' || str[counter] > '~')
 		{
 			return (0);
 		}
@@ -30,7 +30,7 @@ int	ft_str_is_printable(char *str)
 
 // int main(void)
 // {
-// 	char src[20] = "ASD";
+// 	// char src[20] = "ASD";
 
-// 	printf("%d\n", ft_str_is_printable(src));
+// 	printf("%s\n", " 1");
 // }
