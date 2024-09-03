@@ -6,12 +6,9 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 10:06:33 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/09/03 13:07:17 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/09/03 15:33:22 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// #include <stdio.h>
-// #include <string.h>
 
 int	ft_strlen(char *str)
 {
@@ -38,9 +35,12 @@ char	*ft_strcat(char *dest, char *src)
 		i++;
 		len_dest++;
 	}
-	dest[len_dest + i] = '\0';
+	dest[len_dest] = '\0';
 	return (dest);
 }
+
+// #include <stdio.h>
+// #include <string.h>
 
 // void run_test(char *dest, char *src, int dest_size)
 // {
