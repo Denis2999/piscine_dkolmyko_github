@@ -6,7 +6,7 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/03 11:03:29 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/09/03 12:48:52 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/09/03 13:11:18 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,9 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
 	unsigned int	len_dest;
 	unsigned int	i;
+	char			*d;
 
+	d = dest;
 	len_dest = ft_strlen(dest);
 	i = 0;
 	while (src[i] != '\0' && i < nb)
@@ -38,6 +40,8 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 		i++;
 		len_dest++;
 	}
+	dest[len_dest] = '\0';
+	return (d);
 }
 
 // void run_test(char *dest, char *src, unsigned int n, int dest_size)
