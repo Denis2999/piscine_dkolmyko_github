@@ -1,51 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/10 12:18:41 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/09/10 12:20:49 by dkolmyko         ###   ########.fr       */
+/*   Created: 2024/09/10 12:18:45 by dkolmyko          #+#    #+#             */
+/*   Updated: 2024/09/10 12:21:29 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 
-int	*ft_range(int min, int max)
+int	ft_ultimate_range(int **range, int min, int max)
 {
-	int	size;
-	int	*arr;
 	int	i;
+	int	size;
 
-	i = 0;
 	if (min >= max)
 	{
-		return (NULL);
+		*range = NULL;
+		return (0);
 	}
 	size = max - min;
-	arr = (int *)malloc(size * sizeof(int));
-	if (arr == NULL)
+	*range = (int *)malloc(size * sizeof(int));
+	if (*range == NULL)
 	{
-		return (NULL);
+		return (-1);
 	}
-	while (min < max)
+	i = 0;
+	while (i < size)
 	{
-		arr[i] = min;
-		min++;
+		(*range)[i] = min + i;
 		i++;
 	}
-	return (arr);
+	return (size);
 }
+
+// #include <stdio.h>
 
 // int main()
 // {
-// 	// int min = -2147483648;
+// 	int *arr = NULL;
 // 	int min = -20;
 // 	int max = 20;
-// 	int *arr = ft_range(min, max);
+// 	int x = ft_ultimate_range(&arr, min, max);
 
+// 	printf("%d\n", x);
 // 	if (arr != NULL)
 // 	{
 // 		for (int i = 0; i < max - min; i++)
