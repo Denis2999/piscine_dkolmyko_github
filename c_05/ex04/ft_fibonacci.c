@@ -6,13 +6,17 @@
 /*   By: dkolmyko <dkolmyko@student.42warsaw.pl>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 12:21:57 by dkolmyko          #+#    #+#             */
-/*   Updated: 2024/09/07 12:37:27 by dkolmyko         ###   ########.fr       */
+/*   Updated: 2024/09/09 14:45:07 by dkolmyko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_fibonacci(int index)
 {
-	if (index == 0)
+	if (index < 0)
+	{
+		return (-1);
+	}
+	else if (index == 0)
 	{
 		return (0);
 	}
