@@ -1,19 +1,30 @@
-# piscine_dkolmyko_github
+# Piscine by Denis Kolmyko - 42 School
 
-This repository contains all my code files from the 42 School Piscine. Each project and exercise is organized into separate folders. 
+Welcome to my 42 School Piscine repository! This collection contains solutions to various exercises completed during the 42 School's coding bootcamp.
 
-## Projects
+## Project Structure
 
-- **shell_00**
-- **shell_01**
-- And more as I progress through the Piscine...
+- **`c_00` to `c_12`:** Solutions to the C programming exercises, organized by topics such as functions, pointers, memory management, and more.
+- **`rush_00` to `rush_02`:** Weekend coding challenges (Rush projects).
+  
+Each folder contains subdirectories with individual exercise solutions, including source files, headers, and test cases.
 
-## Setup & Usage
+## Usage
 
-To get started:
+To run any exercise:
+1. Clone the repository:  
+   `git clone https://github.com/Denis2999/piscine_dkolmyko_github`
+2. Navigate to the desired folder.
+3. Compile the code using `gcc` or the preferred compiler:
+   gcc -Wall -Wextra -Werror -o program_name source_file.c
+4. Execute the compiled binary:
+   ./program_name
 
-1. Clone the repo:
+## Requirements
 
-   ```bash
-   git clone https://github.com/your-username/piscine_dkolmyko_github.git
-   cd piscine_dkolmyko_github
+- Ensure you have GCC or any standard C compiler installed on your system.
+
+## Contributions
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Denis2999/piscine_dkolmyko_github/issues).
+
